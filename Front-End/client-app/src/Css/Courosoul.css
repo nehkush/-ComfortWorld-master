@@ -1,0 +1,22 @@
+/* Courosoul.css */
+
+.carousel-container {
+  height: 700px; /* Set your desired height */
+  width: 700px; /* Set your desired width */
+  margin: auto; /* Center the carousel horizontally */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.carousel-inner {
+  display: flex;
+}
+
+.carousel-item {
+  flex: 0 0 100%; /* Each item takes 100% width of the carousel container */
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover; /* Maintain aspect ratio and cover the entire container */
+}

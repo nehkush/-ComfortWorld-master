@@ -1,0 +1,24 @@
+/* ProductIssue.css */
+
+/* Center the form vertically and move it to the right */
+.d-flex.align-items-center.justify-content-center.ProductIssueCSS {
+  height: 100vh;
+}
+
+.card {
+  margin-left: auto; /* Move the card to the right */
+  margin-right: 80px; /* Adjust the right margin as needed */
+}
+
+/* Additional styles for form elements */
+.form-label {
+  font-weight: bold;
+}
+
+.invalid-feedback {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Optional: Add more styles based on your design preferences */

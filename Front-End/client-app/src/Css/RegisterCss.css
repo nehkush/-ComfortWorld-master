@@ -1,0 +1,13 @@
+.RegisterCss{
+  align-items: center;
+  margin-right: 25%;
+}
+.left-partition {
+  flex: 1;
+  padding: 20px;
+}
+
+.right-partition {
+  flex: 1;
+  padding: 20px;
+}

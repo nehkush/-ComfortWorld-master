@@ -1,0 +1,53 @@
+
+.contact-container {
+  margin-bottom: 50px;
+}
+
+.contact-container, .query-form-container {
+  height: 100%;
+  width:auto;
+  background-color: #adf5f9;
+  border-radius: 40px;
+  box-shadow: 8px 8px 40px chartreuse;
+}
+
+.query-form-container {
+  margin-left: 40px; /* Add some spacing between the two containers */
+}
+
+.map-container {
+  border-radius: 20px;
+  overflow:hidden;
+  box-shadow: 8px 8px 40px chartreuse;
+  width: 50%;
+  margin-left:  28%;
+ 
+}
+.p-4 {
+  padding: 2.5rem!important;
+}
+.img-fluid {
+  width: 70%; /* Make the image responsive */
+  border-radius: 30px;
+  border-color: aqua;
+  border-width: 2px;
+  margin-left: 170px;
+  margin-top: 20px; /* Add some spacing between the containers and the image */
+}
+.animation{
+  position: relative;
+  animation: bounce 7s;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce{
+
+  0%{
+      transform: translateX(-150px);
+  }
+  50% {
+      transform: translateX(150px);
+  }
+  100% {
+      transform: translateX( -150px);
+  }
+}

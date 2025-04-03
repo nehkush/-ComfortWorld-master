@@ -1,0 +1,758 @@
+_FOR USERS_
+
+Create User (POST):
+
+1. URL: http://localhost:8080/users
+   Method: POST
+   Body (raw JSON):
+   {
+   "name": "John Doe",
+   "email": "john.doe@example.com",
+   "contact_no": "1234567890",
+   "age": 25,
+   "address": "123 Main Street",
+   "password": "securePassword"
+   }
+
+2. Get User by ID (GET):
+
+URL: http://localhost:8080/users/{userId} (replace {userId} with an actual user ID)
+Method: GET
+Send the request and verify the response.
+
+3. Get All Users (GET):
+
+URL: http://localhost:8080/users
+Method: GET
+Send the request and verify the response.
+
+4. Update User by ID (PUT):
+
+URL: http://localhost:8080/users/{userId} (replace {userId} with an actual user ID)
+Method: PUT
+Body (raw JSON):
+json
+Copy code
+
+{
+"name": "Updated Name",
+"email": "updated.email@example.com",
+"contact_no": "9876543210",
+"age": 30,
+"address": "456 Updated Street",
+"password": "newSecurePassword"
+}
+Send the request and verify the response.
+
+5. Delete User by ID (DELETE):
+
+URL: http://localhost:8080/users/{userId} (replace {userId} with an actual user ID)
+Method: DELETE
+Send the request and verify the response.
+
+6. Get User by Email (GET):
+
+URL: http://localhost:8080/users/byEmail?email=john.doe@example.com (replace the email parameter)
+Method: GET
+Send the request and verify the response.
+
+---
+
+_FOR AIRCONDITIONERS_
+
+1. Create Air Conditioner (POST):
+
+URL: http://localhost:8080/airConditioners
+Method: POST
+Body (raw JSON):
+json
+
+{
+"brand": "ExampleBrand",
+"model": "ExampleModel",
+"type": "Split",
+"capacity": 12000,
+"hasRemoteControl": true,
+"price": 499.99,
+"isUnderWarranty": true
+}
+Send the request and verify the response.
+
+2. Get Air Conditioner by ID (GET):
+
+URL: http://localhost:8080/airConditioners/{id} (replace {id} with an actual air conditioner ID)
+Method: GET
+Send the request and verify the response.
+
+3. Get All Air Conditioners (GET):
+
+URL: http://localhost:8080/airConditioners
+Method: GET
+Send the request and verify the response.
+
+4. Update Air Conditioner by ID (PUT):
+
+URL: http://localhost:8080/airConditioners/{id} (replace {id} with an actual air conditioner ID)
+Method: PUT
+Body (raw JSON):
+json
+Copy code
+{
+"brand": "UpdatedBrand",
+"model": "UpdatedModel",
+"type": "Window",
+"capacity": 18000,
+"hasRemoteControl": false,
+"price": 699.99,
+"isUnderWarranty": false
+}
+Send the request and verify the response.
+
+5. Delete Air Conditioner by ID (DELETE):
+
+URL: http://localhost:8080/airConditioners/{id} (replace {id} with an actual air conditioner ID)
+Method: DELETE
+Send the request and verify the response.
+
+6. Get Air Conditioners by Brand (GET):
+
+URL: http://localhost:8080/airConditioners/byBrand?brand=ExampleBrand (replace ExampleBrand with an actual brand)
+Method: GET
+Send the request and verify the response.
+
+---
+
+_FEEDBACK_
+Create Feedback (POST):
+
+1. URL: http://localhost:8080/feedbacks
+   Method: POST
+   Body (raw JSON):
+   json
+   Copy code
+   {
+   "name": "John Doe",
+   "email": "john.doe@example.com",
+   "message": "Great service!",
+   "dateTime": "2022-02-16T12:30:00"
+   }
+   Send the request and verify the response.
+
+2. Get Feedback by ID (GET):
+
+URL: http://localhost:8080/feedbacks/{id} (replace {id} with an actual feedback ID)
+Method: GET
+Send the request and verify the response.
+
+3. Get All Feedbacks (GET):
+
+URL: http://localhost:8080/feedbacks
+Method: GET
+Send the request and verify the response.
+
+4. Update Feedback by ID (PUT):
+
+URL: http://localhost:8080/feedbacks/{id} (replace {id} with an actual feedback ID)
+Method: PUT
+Body (raw JSON):
+json
+Copy code
+{
+"name": "UpdatedName",
+"email": "updated.email@example.com",
+"message": "Updated feedback!",
+"dateTime": "2022-02-16T14:45:00"
+}
+Send the request and verify the response.
+
+5. Delete Feedback by ID (DELETE):
+
+URL: http://localhost:8080/feedbacks/{id} (replace {id} with an actual feedback ID)
+Method: DELETE
+Send the request and verify the response.
+
+6. Get Feedbacks by User Name (GET):
+
+URL: http://localhost:8080/feedbacks/byUserName?userName=JohnDoe (replace JohnDoe with an actual user name)
+Method: GET
+Send the request and verify the response.
+
+---
+
+_GEYSER_
+
+Create Geyser (POST):
+
+1. URL: http://localhost:8080/geysers
+   Method: POST
+   Body (raw JSON):
+   json
+   Copy code
+   {
+   "brand": "ExampleBrand",
+   "model": "ExampleModel",
+   "capacity": 15.5,
+   "hasThermostat": "Yes",
+   "price": 299.99,
+   "isUnderWarranty": "Yes",
+   "isServiceRequired": "No"
+   }
+   Send the request and verify the response.
+
+2. Get Geyser by ID (GET):
+
+URL: http://localhost:8080/geysers/{id} (replace {id} with an actual geyser ID)
+Method: GET
+Send the request and verify the response.
+
+3. Get All Geysers (GET):
+
+URL: http://localhost:8080/geysers
+Method: GET
+Send the request and verify the response.
+
+4. Update Geyser by ID (PUT):
+
+URL: http://localhost:8080/geysers/{id} (replace {id} with an actual geyser ID)
+Method: PUT
+Body (raw JSON):
+json
+Copy code
+{
+"brand": "UpdatedBrand",
+"model": "UpdatedModel",
+"capacity": 20.0,
+"hasThermostat": "No",
+"price": 399.99,
+"isUnderWarranty": "No",
+"isServiceRequired": "Yes"
+}
+Send the request and verify the response.
+
+5. Delete Geyser by ID (DELETE):
+
+URL: http://localhost:8080/geysers/{id} (replace {id} with an actual geyser ID)
+Method: DELETE
+Send the request and verify the response.
+
+6. Get Geysers by Brand (GET):
+
+URL: http://localhost:8080/geysers/byBrand?brand=ExampleBrand (replace ExampleBrand with an actual brand)
+Method: GET
+Send the request and verify the response.
+
+---
+
+_LAPTOP_
+
+1. Create Laptop (POST):
+
+URL: http://localhost:8080/laptops
+Method: POST
+Body (raw JSON):
+json
+Copy code
+{
+"brand": "ExampleBrand",
+"model": "ExampleModel",
+"processor": "Intel i7",
+"ramSize": 16,
+"storageSize": 512,
+"hasSSD": "Yes",
+"screenSize": 15.6,
+"price": 1299.99,
+"isUnderWarranty": "Yes"
+}
+Send the request and verify the response.
+
+2. Get Laptop by ID (GET):
+
+URL: http://localhost:8080/laptops/{id} (replace {id} with an actual laptop ID)
+Method: GET
+Send the request and verify the response.
+
+3. Get All Laptops (GET):
+
+URL: http://localhost:8080/laptops
+Method: GET
+Send the request and verify the response.
+
+4. Update Laptop by ID (PUT):
+
+URL: http://localhost:8080/laptops/{id} (replace {id} with an actual laptop ID)
+Method: PUT
+Body (raw JSON):
+json
+Copy code
+{
+"brand": "UpdatedBrand",
+"model": "UpdatedModel",
+"processor": "AMD Ryzen 9",
+"ramSize": 32,
+"storageSize": 1000,
+"hasSSD": "No",
+"screenSize": 17.3,
+"price": 1599.99,
+"isUnderWarranty": "No"
+}
+Send the request and verify the response.
+
+5. Delete Laptop by ID (DELETE):
+
+URL: http://localhost:8080/laptops/{id} (replace {id} with an actual laptop ID)
+Method: DELETE
+Send the request and verify the response.
+
+6. Get Laptops by Brand (GET):
+
+URL: http://localhost:8080/laptops/byBrand?brand=ExampleBrand (replace ExampleBrand with an actual brand)
+Method: GET
+Send the request and verify the response.
+
+---
+
+_MICROWAVE_
+
+1. Create Microwave (POST):
+
+URL: http://localhost:8080/microwaves
+Method: POST
+Body (raw JSON):
+json
+Copy code
+{
+"brand": "ExampleBrand",
+"model": "ExampleModel",
+"capacity": 25.0,
+"hasConvection": true,
+"price": 199.99,
+"isUnderWarranty": "Yes",
+"isServiceRequired": "No"
+}
+Send the request and verify the response.
+
+2. Get Microwave by ID (GET):
+
+URL: http://localhost:8080/microwaves/{id} (replace {id} with an actual microwave ID)
+Method: GET
+Send the request and verify the response.
+
+3. Get All Microwaves (GET):
+
+URL: http://localhost:8080/microwaves
+Method: GET
+Send the request and verify the response.
+
+4. Update Microwave by ID (PUT):
+
+URL: http://localhost:8080/microwaves/{id} (replace {id} with an actual microwave ID)
+Method: PUT
+Body (raw JSON):
+json
+Copy code
+{
+"brand": "UpdatedBrand",
+"model": "UpdatedModel",
+"capacity": 30.0,
+"hasConvection": false,
+"price": 249.99,
+"isUnderWarranty": "No",
+"isServiceRequired": "Yes"
+}
+Send the request and verify the response.
+
+5. Delete Microwave by ID (DELETE):
+
+URL: http://localhost:8080/microwaves/{id} (replace {id} with an actual microwave ID)
+Method: DELETE
+Send the request and verify the response.
+
+6. Get Microwaves by Brand (GET):
+
+URL: http://localhost:8080/microwaves/byBrand?brand=ExampleBrand (replace ExampleBrand with an actual brand)
+Method: GET
+Send the request and verify the response.
+
+---
+
+_Order_
+
+1. Create Order (POST):
+
+URL: http://localhost:8080/orders
+Method: POST
+Body (raw JSON):
+json
+Copy code
+{
+"orderNumber": "123456",
+"orderDateTime": "2024-02-16T12:30:00",
+"name": "John Doe",
+"address": "123 Main Street",
+"state": "California",
+"pincode": "12345",
+"city": "Los Angeles",
+"country": "USA",
+"mobileNumber": "1234567890",
+"productCategory": "Electronics",
+"issueDescription": "Issue description for the product",
+"payment": "Credit Card"
+}
+Send the request and verify the response.
+
+2. Get Order by ID (GET):
+
+URL: http://localhost:8080/orders/{id} (replace {id} with an actual order ID)
+Method: GET
+Send the request and verify the response.
+
+3. Get All Orders (GET):
+
+URL: http://localhost:8080/orders
+Method: GET
+Send the request and verify the response.
+
+4. Update Order by ID (PUT):
+
+URL: http://localhost:8080/orders/{id} (replace {id} with an actual order ID)
+Method: PUT
+Body (raw JSON):
+json
+Copy code
+{
+"orderNumber": "UpdatedOrderNumber",
+"orderDateTime": "2024-02-16T15:45:00",
+"name": "UpdatedName",
+"address": "UpdatedAddress",
+"state": "UpdatedState",
+"pincode": "UpdatedPincode",
+"city": "UpdatedCity",
+"country": "UpdatedCountry",
+"mobileNumber": "UpdatedMobileNumber",
+"productCategory": "UpdatedProductCategory",
+"issueDescription": "UpdatedIssueDescription",
+"payment": "UpdatedPayment"
+}
+Send the request and verify the response.
+
+5. Delete Order by ID (DELETE):
+
+URL: http://localhost:8080/orders/{id} (replace {id} with an actual order ID)
+Method: DELETE
+Send the request and verify the response.
+
+6. Get Orders by Customer Name (GET):
+
+URL: http://localhost:8080/orders/byCustomerName?customerName=John Doe (replace John Doe with an actual customer name)
+Method: GET
+Send the request and verify the response
+
+---
+
+_PRODUCTISSUES_
+
+1. Create Product Issue (POST):
+
+URL: http://localhost:8080/product-issues
+Method: POST
+Body (raw JSON):
+json
+Copy code
+{
+"category": "Electronics",
+"brand": "Example Brand",
+"modelNumber": "ABC123",
+"issueDescription": "Issue description for the product"
+}
+Send the request and verify the response.
+
+2. Get Product Issue by ID (GET):
+
+URL: http://localhost:8080/product-issues/{id} (replace {id} with an actual product issue ID)
+Method: GET
+Send the request and verify the response.
+
+3. Get All Product Issues (GET):
+
+URL: http://localhost:8080/product-issues
+Method: GET
+Send the request and verify the response.
+
+4. Update Product Issue by ID (PUT):
+
+URL: http://localhost:8080/product-issues/{id} (replace {id} with an actual product issue ID)
+Method: PUT
+Body (raw JSON):
+json
+Copy code
+{
+"category": "UpdatedCategory",
+"brand": "UpdatedBrand",
+"modelNumber": "UpdatedModelNumber",
+"issueDescription": "UpdatedIssueDescription"
+}
+Send the request and verify the response.
+
+5. Delete Product Issue by ID (DELETE):
+
+URL: http://localhost:8080/product-issues/{id} (replace {id} with an actual product issue ID)
+Method: DELETE
+Send the request and verify the response.
+
+6. Get Product Issues by Category (GET):
+
+URL: http://localhost:8080/product-issues/byCategory?category=Electronics (replace Electronics with an actual category)
+Method: GET
+Send the request and verify the response.
+
+---
+
+_TELEVISION_
+
+1. Create Television (POST):
+
+URL: http://localhost:8080/televisions
+Method: POST
+Body (raw JSON):
+json
+Copy code
+{
+"brand": "Example Brand",
+"model": "XYZ123",
+"type": "LED",
+"screenSize": 55,
+"isSmartTV": "Yes",
+"isUnderWarranty": "No"
+}
+Send the request and verify the response.
+
+2. Get Television by ID (GET):
+
+URL: http://localhost:8080/televisions/{id} (replace {id} with an actual television ID)
+Method: GET
+Send the request and verify the response.
+
+3. Get All Televisions (GET):
+
+URL: http://localhost:8080/televisions
+Method: GET
+Send the request and verify the response.
+
+4. Update Television by ID (PUT):
+
+URL: http://localhost:8080/televisions/{id} (replace {id} with an actual television ID)
+Method: PUT
+Body (raw JSON):
+json
+Copy code
+{
+"brand": "UpdatedBrand",
+"model": "UpdatedModel",
+"type": "LCD",
+"screenSize": 60,
+"isSmartTV": "No",
+"isUnderWarranty": "Yes"
+}
+Send the request and verify the response.
+
+5. Delete Television by ID (DELETE):
+
+URL: http://localhost:8080/televisions/{id} (replace {id} with an actual television ID)
+Method: DELETE
+Send the request and verify the response.
+
+6. Get Televisions by Brand (GET):
+
+URL: http://localhost:8080/televisions/byBrand?brand=Example%20Brand (replace Example%20Brand with an actual brand)
+Method: GET
+Send the request and verify the response.
+
+---
+
+_Washing Mchine_
+
+1. Create Washing Machine (POST):
+
+URL: http://localhost:8080/washing-machines
+Method: POST
+Body (raw JSON):
+json
+Copy code
+{
+"brand": "Example Brand",
+"model": "XYZ123",
+"type": "Front Load",
+"capacity": 8.0,
+"hasDryer": "Yes",
+"price": "799.99",
+"isUnderWarranty": "No"
+}
+Send the request and verify the response.
+
+2. Get Washing Machine by ID (GET):
+
+URL: http://localhost:8080/washing-machines/{id} (replace {id} with an actual washing machine ID)
+Method: GET
+Send the request and verify the response.
+
+3. Get All Washing Machines (GET):
+
+URL: http://localhost:8080/washing-machines
+Method: GET
+Send the request and verify the response.
+
+4. Update Washing Machine by ID (PUT):
+
+URL: http://localhost:8080/washing-machines/{id} (replace {id} with an actual washing machine ID)
+Method: PUT
+Body (raw JSON):
+json
+Copy code
+{
+"brand": "UpdatedBrand",
+"model": "UpdatedModel",
+"type": "Top Load",
+"capacity": 10.0,
+"hasDryer": "No",
+"price": "899.99",
+"isUnderWarranty": "Yes"
+}
+Send the request and verify the response.
+
+5. Delete Washing Machine by ID (DELETE):
+
+URL: http://localhost:8080/washing-machines/{id} (replace {id} with an actual washing machine ID)
+Method: DELETE
+Send the request and verify the response.
+
+6. Get Washing Machines by Brand (GET):
+
+URL: http://localhost:8080/washing-machines/byBrand?brand=Example%20Brand (replace Example%20Brand with an actual brand)
+Method: GET
+Send the request and verify the response.
+
+---
+
+_WATER PURIFIER_
+
+1. Create Water Purifier (POST):
+
+URL: http://localhost:8080/water-purifiers
+Method: POST
+Body (raw JSON):
+json
+Copy code
+{
+"brand": "Example Brand",
+"model": "XYZ123",
+"purificationTechnology": "RO+UV",
+"capacity": 10.0,
+"hasUVFilter": "Yes",
+"price": 499.99,
+"isUnderWarranty": "No"
+}
+Send the request and verify the response.
+
+2. Get Water Purifier by ID (GET):
+
+URL: http://localhost:8080/water-purifiers/{id} (replace {id} with an actual water purifier ID)
+Method: GET
+Send the request and verify the response.
+
+3. Get All Water Purifiers (GET):
+
+URL: http://localhost:8080/water-purifiers
+Method: GET
+Send the request and verify the response.
+
+4. Update Water Purifier by ID (PUT):
+
+URL: http://localhost:8080/water-purifiers/{id} (replace {id} with an actual water purifier ID)
+Method: PUT
+Body (raw JSON):
+json
+Copy code
+{
+"brand": "UpdatedBrand",
+"model": "UpdatedModel",
+"purificationTechnology": "RO",
+"capacity": 12.0,
+"hasUVFilter": "No",
+"price": 599.99,
+"isUnderWarranty": "Yes"
+}
+Send the request and verify the response.
+
+5. Delete Water Purifier by ID (DELETE):
+
+URL: http://localhost:8080/water-purifiers/{id} (replace {id} with an actual water purifier ID)
+Method: DELETE
+Send the request and verify the response.
+
+6. Get Water Purifiers by Brand (GET):
+
+URL: http://localhost:8080/water-purifiers/byBrand?brand=Example%20Brand (replace Example%20Brand with an actual brand)
+Method: GET
+Send the request and verify the response.
+
+---
+
+_WORKER_
+
+1. Create Worker (POST):
+
+URL: http://localhost:8080/workers
+Method: POST
+Body (raw JSON):
+json
+Copy code
+{
+"fullName": "John Doe",
+"email": "john.doe@example.com",
+"phoneNumber": "1234567890",
+"experience": "Senior Technician",
+"age": 30
+}
+Send the request and verify the response.
+
+2. Get Worker by ID (GET):
+
+URL: http://localhost:8080/workers/{id} (replace {id} with an actual worker ID)
+Method: GET
+Send the request and verify the response.
+
+3. Get Worker by Email (GET):
+
+URL: http://localhost:8080/workers/byEmail?email=john.doe@example.com (replace john.doe@example.com with an actual email)
+Method: GET
+Send the request and verify the response.
+
+4. Get All Workers (GET):
+
+URL: http://localhost:8080/workers
+Method: GET
+Send the request and verify the response.
+
+5. Update Worker by ID (PUT):
+
+URL: http://localhost:8080/workers/{id} (replace {id} with an actual worker ID)
+Method: PUT
+Body (raw JSON):
+json
+Copy code
+{
+"fullName": "Updated John Doe",
+"email": "john.doe.updated@example.com",
+"phoneNumber": "9876543210",
+"experience": "Lead Technician",
+"age": 32
+}
+Send the request and verify the response.
+
+6. Delete Worker by ID (DELETE):
+
+URL: http://localhost:8080/workers/{id} (replace {id} with an actual worker ID)
+Method: DELETE
+Send the request and verify the response.
+
+---

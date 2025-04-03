@@ -1,0 +1,35 @@
+/* OrderForm.css */
+
+/* Center the form vertically and horizontally */
+.card {
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* Center the form vertically and move it to the right */
+.d-flex {
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+}
+
+/* Additional styles as needed */
+/* ... */
+
+/* Styles for left and right columns in the form */
+.row {
+  margin-bottom: 15px;
+}
+
+.col-md-6 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Adjust styles for individual form fields if needed */
+.form-label {
+  font-weight: bold;
+}
+
+/* Add more styles based on your requirements */

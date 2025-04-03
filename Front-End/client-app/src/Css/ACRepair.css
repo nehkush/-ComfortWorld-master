@@ -1,0 +1,16 @@
+/* Add this style to your existing CSS file or create a new one */
+
+/* Center the form vertically and move it to the right */
+.d-flex.align-items-center.justify-content-center ACRepairCSS {
+  height: 100vh;
+}
+
+.card {
+  margin-left: auto; /* Move the card to the right */
+  margin-right: 80px; /* Adjust the right margin as needed */
+}
+.ACInfoCards{
+  align-items: left;
+  margin-left: 2px;
+  justify-content: center;
+}

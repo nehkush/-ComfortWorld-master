@@ -1,0 +1,160 @@
+/* Reset Styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #24ab63;;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+} 
+
+
+
+main {
+    padding: 20px;
+}
+
+.service-card {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar-brand {
+    font-family: 'Arial Black', sans-serif; /* Example font family */
+    font-size: 28px; /* Example font size */
+    font-weight: bold; /* Example font weight */
+    color: #44c42b; /* Text color */
+    margin-left: 15px;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Navbar background */
+.navbar {
+    background-color: #0b0b0b; /* Dark background color */
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: bold; /* Example font weight */
+    color: whitesmoke; /* Text color */
+    transition: 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+/* Hover effect for navigation links */
+.navbar-nav a:hover {
+   
+    transform: scale(1.3);
+   
+}
+
+.navbar .btn-sign-in .btn,
+.navbar .btn-sign-up .btn {
+    color:  #d889c0;
+    font-weight: 800;
+    ackground-color: transparent;
+    border: 3px solid #d889c0;
+
+}
+
+.animation{
+    position: relative;
+    animation: bounce 7s;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce{
+
+    0%{
+        transform: translateX(-150px);
+    }
+    50% {
+        transform: translateX(150px);
+    }
+    100% {
+        transform: translateX( -150px);
+    }
+}
+
+
+#contact-info {
+    background-color: #7edecf;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(181, 79, 79, 0.1);
+    padding: 30px;
+}
+
+iframe {
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 300px;
+}
+
+#contact-info {
+    background-color: #b1f9a1; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 30px; /* Padding for content */
+}
+
+#contact-info h2 {
+    color: #c14b4b; /* Dark text color for heading */
+    margin-bottom: 20px; /* Spacing below heading */
+}
+
+#contact-info ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+#contact-info ul li {
+    margin-bottom: 15px; /* Spacing between list items */
+    font-size: 20px; /* Larger font size for better readability */
+}
+
+#contact-info ul li span {
+    color: #d865dc; /* Lighter text color */
+}
+
+#contact-info ul li strong {
+    color: #333; /* Dark text color for emphasis */
+}
+
+iframe {
+    border-radius: 10px; /* Rounded corners for map */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    width: 100%; /* Full width */
+    height: 300px; /* Fixed height for map */
+}
+
+footer {
+    background-color: #080808;
+    color: #fff;
+}
